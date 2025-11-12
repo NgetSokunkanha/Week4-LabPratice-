@@ -72,11 +72,12 @@ class Queue {
             return;
         }
         cout << "--- Queue ---" << endl;
+        cout << "Queue length: " << length << endl;
         while (cur != nullptr){
             cout << endl << "- Order No." << cur->order_Id << "  -"<< endl;
             cout << "Item: " << cur->item_Name << endl;
             cout << "Amount: " << cur->item_Amount << endl;
-            cout << "Price per unit: " << cur->item_Price << endl;
+            cout << "Price per unit: " << cur->item_Price << "$" << endl;
             cout << "Total price: " << cur->total_Price << "$" << endl;
             cur->display_Date();
             cur = cur->next;
